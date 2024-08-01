@@ -58,26 +58,38 @@ export const SocialData = [
 export const ReviewsData = [
 	{
 		id: 1,
-		name: 'Mr Belba Ngoy',
+		name: 'Mr Belba Joy',
 		imageSrc: '/images/reviews/picture1.png',
 		content: 'Always a remarkable experience for my team and myself',
 	},
 	{
 		id: 2,
-		name: 'Mr Belba Ngoy',
-		imageSrc: '/images/reviews/picture1.png',
+		name: 'Mr Belba Isreal',
+		imageSrc: '/images/reviews/picture2.png',
 		content: 'Always a remarkable experience for my team and myself',
 	},
 	{
 		id: 3,
 		name: 'Mr Belba Ngoy',
-		imageSrc: '/images/reviews/picture1.png',
+		imageSrc: '/images/reviews/picture3.png',
 		content: 'Always a remarkable experience for my team and myself',
 	},
 	{
 		id: 4,
-		name: 'Mr Belba Ngoy',
+		name: 'Mr Belba Ngoya',
+		imageSrc: '/images/reviews/picture4.png',
+		content: 'Always a remarkable experience for my team and myself',
+	},
+	{
+		id: 5,
+		name: 'Mr Belba Ngoya',
 		imageSrc: '/images/reviews/picture1.png',
+		content: 'Always a remarkable experience for my team and myself',
+	},
+	{
+		id: 6,
+		name: 'Mr Belba Ngoya',
+		imageSrc: '/images/reviews/picture2.png',
 		content: 'Always a remarkable experience for my team and myself',
 	},
 	

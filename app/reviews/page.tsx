@@ -33,8 +33,8 @@ const Reviews = () => {
 										height={20}
 									/>
 									<div className="m-auto flex flex-col w-11/12 items-center justify-center text-center">
-										<p className="font-semibold">{name}</p>
-										<p className="text-xs">{content}</p>
+										<p className='font-semibold'>{name}</p>
+										<p className='text-xs'>{content}</p>
 									</div>
 								</div>
 							</div>
