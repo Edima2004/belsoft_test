@@ -85,7 +85,7 @@ const HomeContent = () => {
 							sizes="(max-width:768px) 100vw, (max-width:1200px) 50vw"
 						/>
 					</div>
-					<div className="m-auto relative w-56 h-56 bottom-24 left-16">
+					<div className="m-auto relative w-48 h-48 bottom-24 left-16">
 						<Image
 							className="rounded-xl flex m-auto w-[4/4] lg:w-4/4 object-contain"
 							src="/images/layer1-images/img2.png"
@@ -128,7 +128,7 @@ const HomeContent = () => {
 					<h2 className="text-black font-bold mb-1 text-3xl lg:hidden">
 						Who are we?
 					</h2>
-					<div className="m-auto relative w-96 h-80">
+					<div className="m-auto relative w-80 h-72">
 						<Image
 							className="rounded-xl flex m-auto w-[4/4] lg:w-4/4 object-cover"
 							src="/images/home-img4.png"
@@ -148,7 +148,7 @@ const HomeContent = () => {
 						founders, innovators, and tech enthusiasts could connect, share
 						ideas, and foster collaboration.
 					</p>
-					<p className="lg:hidden">
+					<p className="lg:hidden home-p max-w-3xl pb-3 leading-8 tracking-wide">
 						Join us at the next Founder&apos;s Friday and be part of
 						Abuja&apos;s most dynamic startup community. Together, we&apos;re
 						not just sharing ideas—we&apos;re shaping the future of tech in our

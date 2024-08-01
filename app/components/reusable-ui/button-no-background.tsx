@@ -10,7 +10,7 @@ const ButtonNoBackground = ({buttonLabel, buttonIconSrc, buttonSrc}:ButtonProps)
   return (
 		<a href={buttonSrc}>
 			<div
-				className={`text-main flex border rounded-3xl max-w-72 border-main-purple p-3 px-8 justify-evenly gap-1`}
+				className={`text-main flex border rounded-3xl max-w-80 border-main-purple p-3 px-8 justify-evenly gap-1`}
 			>
 				<button type="submit" className="text-main-purple">
 					{buttonLabel}
