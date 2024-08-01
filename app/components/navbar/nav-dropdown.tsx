@@ -30,9 +30,9 @@ const NavDropdown = () => {
 				initial="initial"
 				animate="animate"
 				exit="exit"
-				className="fixed left-0 top-16 w-full origin-top h-screen"
+				className="fixed left-0 top-16 w-full z-10 origin-top h-screen"
 			>
-				<div className="m-auto flex justify-center items-center h-screen bg-dropdown-bg md:hidden text-2xl">
+				<div className="m-auto flex justify-center items-center h-screen bg-dropdown-bg lg:hidden text-2xl">
 					<NavBlock />
 				</div>
 			</motion.div>

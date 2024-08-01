@@ -9,13 +9,14 @@ import Reviews from '../reviews';
 import HomeRegister from './home-register';
 import HomeSponsor from './home-sponsor';
 import HomeFaq from './home-faq';
+import HomeOffer from './home-offer';
 
 const HomeContent = () => {
 	return (
 		<div className="m-auto w-12/12">
 			{/* First Layer */}
-			<div className="flex flex-col md:flex-row justify-between gap-5 flex-grow m-auto w-11/12">
-				<div>
+			<div className="flex flex-col lg:flex-row justify-between gap-5 flex-grow m-auto w-11/12 ">
+				<div className="lg:max-w-screen-md max-w-screen-sm">
 					<p className="home-small-p pt-8 text-xs">
 						Join our premier monthly meetup for startup founders and tech
 						visionaries
@@ -23,7 +24,7 @@ const HomeContent = () => {
 					<h2 className="text-main-purple font-bold text-3xl py-1">
 						Connect, Collaborate, Innovate!
 					</h2>
-					<p className="home-p pt-5 max-w-screen-md pb-5  leading-8 tracking-wide">
+					<p className="home-p pt-5 pb-5  leading-8 tracking-wide">
 						Every last Friday of the month, we bring together the brightest
 						minds in our local tech ecosystem. Whether you&apos;re a seasoned
 						entrepreneur or just starting your journey, Founder&apos;s Friday is
@@ -64,14 +65,53 @@ const HomeContent = () => {
 						/>
 					</span>
 				</div>
-				<div>
-					<Image
-						className="rounded-xl flex m-auto justify-center align-middle mt-10 w-[4/4] lg:w-4/4"
-						src="/images/test-image.jpg"
-						alt="collaborator-link"
-						width={400}
-						height={300}
-					/>
+				<div className=" pt-10  px-16 lg:pr-52">
+					{/* bg-line */}
+					{/*<div>
+						<Image
+							className="rounded-xl flex m-auto justify-center align-middle absolute w-[4/4] lg:w-4/4 top-16 right-56"
+							src="/images/bg-line2.png"
+							alt="collaborator-link"
+							width={400}
+							height={300}
+						/>
+					</div>*/}
+					<div className="m-auto relative w-56 h-56 right-16 ">
+						<Image
+							className="rounded-xl flex m-auto w-[4/4] lg:w-4/4 object-contain"
+							src="/images/layer1-images/img1.png"
+							alt="collaborator-link"
+							fill
+							sizes="(max-width:768px) 100vw, (max-width:1200px) 50vw"
+						/>
+					</div>
+					<div className="m-auto relative w-56 h-56 bottom-24 left-16">
+						<Image
+							className="rounded-xl flex m-auto w-[4/4] lg:w-4/4 object-contain"
+							src="/images/layer1-images/img2.png"
+							alt="collaborator-link"
+							fill
+							sizes="(max-width:768px) 100vw, (max-width:1200px) 50vw"
+						/>
+					</div>
+					<div className="m-auto relative w-32 h-32 bottom-48 right-28">
+						<Image
+							className="rounded-xl flex m-auto w-[4/4] lg:w-4/4 object-contain"
+							src="/images/layer1-images/img3.png"
+							alt="collaborator-link"
+							fill
+							sizes="(max-width:768px) 100vw, (max-width:1200px) 50vw"
+						/>
+					</div>
+					<div className="m-auto relative w-20 h-20 bottom-48 right-">
+						<Image
+							className="rounded-xl flex m-auto w-[4/4] lg:w-4/4 object-contain"
+							src="/images/layer1-images/img4.png"
+							alt="collaborator-link"
+							fill
+							sizes="(max-width:768px) 100vw, (max-width:1200px) 50vw"
+						/>
+					</div>
 				</div>
 			</div>
 
@@ -82,22 +122,24 @@ const HomeContent = () => {
 				//initial={"initial"}
 				//whileInView={'show'}
 				//viewport={{ once: false, amount: 0.7 }}
-				className="flex flex-col md:flex-row justify-between gap-8 items-center flex-grow m-auto w-11/12 pt-20"
+				className="flex flex-col lg:flex-row justify-between gap-8 items-center flex-grow m-auto w-11/12"
 			>
 				<div>
-					<h2 className="text-black font-bold mb-5 text-3xl md:hidden">
+					<h2 className="text-black font-bold mb-1 text-3xl lg:hidden">
 						Who are we?
 					</h2>
-					<Image
-						className="rounded-xl flex m-auto w-[4/4] lg:w-4/4 "
-						src="/images/home-img4.png"
-						alt="collaborator-link"
-						width={400}
-						height={300}
-					/>
+					<div className="m-auto relative w-96 h-80">
+						<Image
+							className="rounded-xl flex m-auto w-[4/4] lg:w-4/4 object-cover"
+							src="/images/home-img4.png"
+							alt="collaborator-link"
+							fill
+							sizes="(max-width:768px) 100vw, (max-width:1200px) 50vw"
+						/>
+					</div>
 				</div>
-				<div className="md:border-l-2 md:border-y-2 flex flex-col md:pl-4 border-secondary-purple rounded-xl">
-					<h2 className="hidden text-black font-bold text-3xl mb-8 md:block relative bottom-6 bg-white pl-2">
+				<div className="lg:border-l-2 lg:border-y-2 flex flex-col w-12/12 lg:pl-4 border-secondary-purple rounded-xl">
+					<h2 className="hidden text-black font-bold text-3xl mb-8 lg:block relative bottom-6 bg-white pl-2">
 						Who are we?
 					</h2>
 					<p className="home-p max-w-3xl pb-3 leading-8 tracking-wide">
@@ -106,7 +148,7 @@ const HomeContent = () => {
 						founders, innovators, and tech enthusiasts could connect, share
 						ideas, and foster collaboration.
 					</p>
-					<p className="md:hidden">
+					<p className="lg:hidden">
 						Join us at the next Founder&apos;s Friday and be part of
 						Abuja&apos;s most dynamic startup community. Together, we&apos;re
 						not just sharing ideas—we&apos;re shaping the future of tech in our
@@ -130,6 +172,11 @@ const HomeContent = () => {
 					</p>
 				</div>
 			</div>
+
+			{/* 3rd layer */}
+			<div className="m-auto w-11/12 pt-10">
+				<HomeOffer />
+			</div>
 			{/* 4th layer */}
 			<div className="m-auto w-11/12 pb-72">
 				<h2 className="text-black font-bold my-16 text-2xl ">
@@ -143,8 +190,8 @@ const HomeContent = () => {
 			</div>
 
 			{/* 6th Layer */}
-			<div className="bg-home-bg-img bg-cover ">
-				<div className="flex flex-col md:flex-row justify-between gap-5 flex-grow m-auto w-11/12 text-white items-center py-8 mt-10">
+			<div className="bg-home-bg-img md:bg-cover ">
+				<div className="flex flex-col md:flex-row justify-between gap-5 flex-grow m-auto w-11/12 text-white items-center py-16 pb-28 mt-10">
 					<div>
 						<p className=" pt-8 text-2xl font-bold">
 							Founder&apos;s Friday is coming to
@@ -152,7 +199,7 @@ const HomeContent = () => {
 						<h2 className="text-main-purple font-bold md:text-7xl text-5xl py-1">
 							Kaduna
 						</h2>
-						<p className="home-p pt-5 max-w-screen-md pb-5  leading-8 tracking-wide ">
+						<p className="home-p pt-5 max-w-lg pb-5  leading-8 tracking-wide ">
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac
 							rutrum felis. Nulla nibh lorem, facilisis vel est at, vehicula
 							dignissim lacus. Cras sagittis imperdiet dolor, eget accumsan leo
@@ -166,13 +213,13 @@ const HomeContent = () => {
 							buttonSrc="/register"
 						/>
 					</div>
-					<div>
+					<div className="m-auto relative w-80 h-80">
 						<Image
-							className="rounded-xl flex m-auto justify-center align-middle mt-10 w-[4/4] lg:w-4/4 "
+							className="rounded-xl flex m-auto justify-center items-center w-[4/4] lg:w-4/4 object-cover"
 							src="/images/big-logo.png"
 							alt="collaborator-link"
-							width={390}
-							height={300}
+							fill
+							sizes="(max-width:768px) 100vw,"
 						/>
 					</div>
 				</div>
@@ -209,7 +256,6 @@ const HomeContent = () => {
 				</div>
 			</div>
 
-			{/*<HomeAccordion />*/}
 			{/* 9th Layer */}
 			<div className="m-auto w-11/12 text-center mt-28">
 				<h2 className="text-black font-bold mb-5 text-2xl ">
@@ -220,7 +266,8 @@ const HomeContent = () => {
 				</p>
 				<Reviews />
 			</div>
-			<div className="m-auto w-11/12 mt-20">
+
+			<div className="m-auto w-11/12 mt-20 mb-20">
 				<HomeFaq />
 			</div>
 		</div>

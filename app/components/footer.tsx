@@ -15,7 +15,7 @@ const Footer = () => {
 					height={20}
 				/>
 			</div>
-			<div className=" m-auto w-11/12 flex flex-col justify-center md:items-center my-8 max-w-3xl">
+			<div className=" m-auto w-11/12 flex flex-col justify-center lg:items-center my-8 max-w-3xl">
 				<h2 className="font-bold text-3xl py-1 md:text-center">
 					Want To Be A Part Of Abuja&apos;s Biggest Tech Community?{' '}
 				</h2>
@@ -28,7 +28,7 @@ const Footer = () => {
 			</div>
 			<div className=" m-auto w-11/12">
 				<hr />
-				<div className="my-4 flex flex-col md:flex-row justify-between gap-2">
+				<div className="my-4 flex flex-col lg:flex-row justify-between gap-2">
 					<div>
 						<Socials />
 					</div>
