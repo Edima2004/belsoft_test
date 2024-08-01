@@ -4,16 +4,18 @@ import React, { useState } from 'react';
 import { NavData } from '@/data/data';
 import Image from 'next/image';
 import '@/app/styles/components/navbar.css';
+import NavDropdown from './nav-dropdown';
+import FormButton from '../reusable-ui/form-button';
 
 const Navbar = () => {
-	const [openSideMenu, setOpenSideMenu] = useState(false);
+	const [openDropDown, setOpenDropDown] = useState(false);
 
 	const changeBars = () => {
-		setOpenSideMenu(!openSideMenu);
+		setOpenDropDown(!openDropDown);
 	};
 	return (
 		<div className="m-auto w-full bg-nav-bg">
-			<div className="m-auto w-11/12 flex justify-between align-baseline p-4">
+			<div className="m-auto w-11/12 flex justify-between  items-center p-4">
 				<div className="flex flex-row justify-evenly md:flex-grow">
 					<div className="flex flex-row">
 						<Image
@@ -28,7 +30,7 @@ const Navbar = () => {
 						</span>
 					</div>
 
-					<div className="flex flex-row gap-5">
+					<div className="flex flex-row gap-5 mx-8">
 						{NavData.map((nav) => {
 							const { id, name, link, textColor } = nav;
 							return (
@@ -41,16 +43,19 @@ const Navbar = () => {
 						})}
 					</div>
 					<div className="hidden md:flex flex-row ">
-						<button type="button" className="p-4 rounded-sm border-m">
-							Register
-						</button>
+						<FormButton
+							buttonLabel="Register"
+							buttonIconSrc="arrow-right1.png"
+							buttonSrc="/register"
+							borderBgTxtBd={`border-main-purple bg-white text-main-purple rounded-xl`}
+						/>
 					</div>
 				</div>
 				<div>
 					<button className="fabars" onClick={changeBars}>
 						<button
 							id="menu-btn"
-							className={`hamburger ${openSideMenu && 'open'}`}
+							className={`hamburger ${openDropDown && 'open'}`}
 						>
 							<span className="hamburger-top"></span>
 							<span className="hamburger-middle"></span>
@@ -59,6 +64,8 @@ const Navbar = () => {
 					</button>
 				</div>
 			</div>
+			<hr />
+			{openDropDown && <NavDropdown />}
 		</div>
 	);
 };

@@ -1,7 +1,7 @@
 import ButtonNoBackground from './reusable-ui/button-no-background';
 import Image from 'next/image';
 import Socials from './socials';
-import NavBlock from './nav-block';
+import NavBlock from './navbar/nav-block';
 
 const Footer = () => {
 	return (
@@ -28,13 +28,13 @@ const Footer = () => {
 			</div>
 			<div className=" m-auto w-11/12">
 				<hr />
-				<div className='my-4 flex flex-col md:flex-row justify-between gap-2'>
+				<div className="my-4 flex flex-col md:flex-row justify-between gap-2">
 					<div>
 						<Socials />
 					</div>
 					<div>
-                  <NavBlock/>
-               </div>
+						<NavBlock />
+					</div>
 				</div>
 			</div>
 		</div>
