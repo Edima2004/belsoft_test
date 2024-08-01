@@ -16,7 +16,7 @@ const Navbar = () => {
 	return (
 		<div className="m-auto w-full bg-nav-bg">
 			<div className="m-auto w-11/12 flex justify-between  items-center p-4">
-				<div className="flex flex-row justify-evenly md:flex-grow">
+				<div className="flex flex-row justify-between lg:flex-grow">
 					<div className="flex flex-row">
 						<Image
 							width={40}
@@ -25,7 +25,7 @@ const Navbar = () => {
 							src={'/images/main-logo.png'}
 							alt="logo"
 						/>
-						<span className="text-logo hidden md:block">
+						<span className="text-logo hidden lg:block">
 							Founder&apos;s Friday
 						</span>
 					</div>
@@ -34,7 +34,7 @@ const Navbar = () => {
 						{NavData.map((nav) => {
 							const { id, name, link, textColor } = nav;
 							return (
-								<nav className="hidden md:block" key={id}>
+								<nav className="hidden lg:block" key={id}>
 									<a className="nav-item" href={link}>
 										<span className={textColor}>{name}</span>
 									</a>
@@ -42,7 +42,7 @@ const Navbar = () => {
 							);
 						})}
 					</div>
-					<div className="hidden md:flex flex-row ">
+					<div className="hidden lg:flex flex-row ">
 						<FormButton
 							buttonLabel="Register"
 							buttonIconSrc="arrow-right1.png"

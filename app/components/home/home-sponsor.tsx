@@ -9,13 +9,13 @@ const HomeSponsor = () => {
 			<h2 className="text-black font-bold mb-8 text-3xl max-w-64">
 				Why Sponsor Founders Friday?
 			</h2>
-			<div className="flex flex-col md:flex-row justify-between items-start gap-8 flex-grow m-auto w-11/12 ">
+			<div className="m-auto flex flex-col lg:flex-row justify-between lg:items-start gap-8  w-11/12 ">
 				<div>
 					<Image
-						className="rounded-xl flex m-auto justify-center align-middle w-[4/4] lg:w-4/4 "
+						className="rounded-xl flex m-auto justify-center items-center w-[3/4] lg:w-4/4 "
 						src="/images/sponsor-img.png"
 						alt="collaborator-link"
-						width={500}
+						width={380}
 						height={300}
 					/>
 				</div>

@@ -4,7 +4,7 @@ const NavBlock = () => {
 	
 	return (
 		<div>
-			<div className="flex flex-col gap-3 md:flex-row">
+			<div className="flex flex-col gap-3 lg:flex-row">
 				{NavData.map((nav) => {
 					const { id, name, link, textColor } = nav;
 					return (

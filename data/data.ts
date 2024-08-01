@@ -92,5 +92,42 @@ export const ReviewsData = [
 		imageSrc: '/images/reviews/picture2.png',
 		content: 'Always a remarkable experience for my team and myself',
 	},
-	
+];
+
+export const OfferData = [
+	{
+		id: 1,
+		name: 'Monthly Meetups',
+		iconSrc: '/icons/offer-icon.png',
+		content:
+			'Our cornerstone event, held on the last Friday of every month, featuring keynote speakers, panel discussions, and ample networking opportunities.',
+	},
+	{
+		id: 2,
+		name: 'Diverse Network',
+		iconSrc: '/icons/offer-icon.png',
+		content:
+			'Connect with a wide range of professionals, from early-stage founders to seasoned entrepreneurs, investors, and industry experts.',
+	},
+	{
+		id: 3,
+		name: 'Knowledge Sharing',
+		iconSrc: '/icons/offer-icon.png',
+		content:
+			'Connect with a wide range of professionals, from early-stage founders to seasoned entrepreneurs, investors, and industry experts.',
+	},
+	{
+		id: 4,
+		name: 'Collaboration Opportunities',
+		iconSrc: '/icons/offer-icon.png',
+		content:
+			'Find potential co-founders, mentors, or partners for your next big venture.',
+	},
+	{
+		id: 5,
+		name: 'Community Support',
+		iconSrc: '/icons/offer-icon.png',
+		content:
+			'Be part of a supportive ecosystem that celebrates successes and provides guidance through challenges.',
+	},
 ];

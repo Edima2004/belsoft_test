@@ -60,6 +60,7 @@ const config = {
 			},
 			backgroundImage: {
 				'home-bg-img': "url('/images/home-bg-img.png')",
+				'home-bg-line': "url('/images/bg-line.png')",
 			},
 			borderColor: {
 				'main-purple': '#9524FF',

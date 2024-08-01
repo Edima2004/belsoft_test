@@ -201,25 +201,25 @@ const CarouselPrevious = React.forwardRef<
   const { orientation, scrollPrev, canScrollPrev } = useCarousel()
 
   return (
-    <Button
-      ref={ref}
-      variant={variant}
-      size={size}
-      className={cn(
-        "absolute  h-8 w-8 rounded-full",
-        orientation === "horizontal"
-          ? "-left-12 top-1/2 -translate-y-1/2"
-          : "-top-12 left-1/2 -translate-x-1/2 rotate-90",
-        className
-      )}
-      disabled={!canScrollPrev}
-      onClick={scrollPrev}
-      {...props}
-    >
-      <ArrowLeft className="h-4 w-4" />
-      <span className="sr-only">Previous slide</span>
-    </Button>
-  )
+		<Button
+			ref={ref}
+			variant={variant}
+			size={size}
+			className={cn(
+				'absolute  h-10 w-10 rounded-full  border-main-purple mb-8 bottom-72 md:bottom-64 -right-8'
+				//orientation === 'horizontal'
+				//	? '-left-12 top-1/2 -translate-y-1/2'
+				//	: '-top-12 left-1/2 -translate-x-1/2 rotate-90',
+				//className
+			)}
+			disabled={!canScrollPrev}
+			onClick={scrollPrev}
+			{...props}
+		>
+			<ArrowLeft className="h-4 w-4" />
+			<span className="sr-only">Previous slide</span>
+		</Button>
+	);
 })
 CarouselPrevious.displayName = "CarouselPrevious"
 
@@ -230,25 +230,25 @@ const CarouselNext = React.forwardRef<
   const { orientation, scrollNext, canScrollNext } = useCarousel()
 
   return (
-    <Button
-      ref={ref}
-      variant={variant}
-      size={size}
-      className={cn(
-        "absolute h-8 w-8 rounded-full",
-        orientation === "horizontal"
-          ? "-right-12 top-1/2 -translate-y-1/2"
-          : "-bottom-12 left-1/2 -translate-x-1/2 rotate-90",
-        className
-      )}
-      disabled={!canScrollNext}
-      onClick={scrollNext}
-      {...props}
-    >
-      <ArrowRight className="h-4 w-4" />
-      <span className="sr-only">Next slide</span>
-    </Button>
-  )
+		<Button
+			ref={ref}
+			variant={variant}
+			size={size}
+			className={cn(
+				'absolute h-10 w-10 mb-8 rounded-full border-main-purple bottom-72 md:bottom-64 -right-20',
+				//orientation === "horizontal"
+				//? "-right-12 top-2/4 -translate-y-1/2"
+				//: "-bottom-12 left-1/2 -translate-x-1/2 rotate-90",
+				className
+			)}
+			disabled={!canScrollNext}
+			onClick={scrollNext}
+			{...props}
+		>
+			<ArrowRight className="h-4 w-4" />
+			<span className="sr-only">Next slide</span>
+		</Button>
+	);
 })
 CarouselNext.displayName = "CarouselNext"
 
